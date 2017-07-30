@@ -94,7 +94,6 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
 
   // INITIALIZATION
   if (!is_initialized_){       
-    cout << "UKF: " << endl;
     x_ <<  1, 1, 1, 1, 0.1;
     P_ = MatrixXd::Identity(5,5);
 
